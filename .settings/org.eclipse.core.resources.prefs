@@ -1,6 +1,5 @@
 eclipse.preferences.version=1
 encoding//com/myfq/cases/baseTestCase.py=utf-8
 encoding//com/myfq/configs/config.py=utf-8
-encoding//com/myfq/pages/baseElement.py=utf-8
-encoding//com/myfq/pages/basePage.py=utf-8
-encoding//com/myfq/pages/mainPage.py=utf-8
+encoding//com/myfq/pages/element.py=utf-8
+encoding//com/myfq/pages/page.py=utf-8
