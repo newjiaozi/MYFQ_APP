@@ -9,7 +9,7 @@ import unittest
 from appium import webdriver
 
 from ..configs import config
-
+from ..pages import page
 
 class BaseTestCase(unittest.TestCase):
 
@@ -26,9 +26,11 @@ class BaseTestCase(unittest.TestCase):
 
 
     def tearDown(self):
-        self.driver.quit()
+        self.driver.close()
 
+    
 
+        
 
 
 if __name__ == "__main__":
