@@ -8,11 +8,11 @@ Created on 2016年8月6日
 from selenium.webdriver.common.by import By
 
 
-start_page = {
+start_page_elements = {
               'go_button':(By.ID,'')              
               }
 
-login_page = {
+login_page_elements = {
               'go_button':(By.ID,'')              
               }
 
