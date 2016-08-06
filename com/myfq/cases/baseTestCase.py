@@ -9,7 +9,7 @@ import unittest
 from appium import webdriver
 
 from ..configs import config
-from ..pages import page
+
 
 class BaseTestCase(unittest.TestCase):
 
@@ -18,8 +18,10 @@ class BaseTestCase(unittest.TestCase):
             'platformName': config.CONNECT['platformName'],
             'platformVersion': config.CONNECT['platformVersion'],
             'deviceName': config.CONNECT['deviceName'],
-            'appPackage': config.CONNECT['appPackage'],
-            'appActivity': config.CONNECT['appActivity']
+#             'appPackage': config.CONNECT['appPackage'],
+#             'appActivity': config.CONNECT['appActivity'],
+            'app': config.CONNECT['app']
+            
         }
         
         self.driver = webdriver.Remote(config.CONNECT['baseUrl'], desired_caps)
@@ -28,11 +30,3 @@ class BaseTestCase(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
-    
-
-        
-
-
-if __name__ == "__main__":
-    #import sys;sys.argv = ['', 'Test.testName']
-    unittest.main()

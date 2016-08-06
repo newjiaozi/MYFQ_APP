@@ -114,3 +114,6 @@ class BasePage(object):
 
 class StartPage(BasePage):    
     pass    
+
+class LoginPage(BasePage):    
+    pass   
